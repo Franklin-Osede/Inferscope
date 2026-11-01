@@ -1,0 +1,27 @@
+# Local configuration: holds project and billing IDs. Never commit.
+*.tfvars
+!*.tfvars.example
+.env
+.env.*
+
+# Terraform state can contain sensitive values
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Credentials and cluster access
+*.pem
+*-key.json
+kubeconfig*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# OS and editor
+.DS_Store
+.vscode/
