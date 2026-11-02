@@ -1,0 +1,8 @@
+# Copy to terraform.tfvars (gitignored) and fill in your own values.
+project_id      = "your-gcp-project-id"
+billing_account = "XXXXXX-XXXXXX-XXXXXX"
+region          = "us-central1"
+zone            = "us-central1-a"
+
+# Budget alerts notify only. They do not stop spending.
+budget_amount_usd = 30
